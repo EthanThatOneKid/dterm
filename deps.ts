@@ -1,1 +1,1 @@
-export { default as GBA } from "https://esm.sh/gbajs@1.1.2";
+export { Gameboy } from "https://esm.sh/gameboy-emulator@1.1.2";

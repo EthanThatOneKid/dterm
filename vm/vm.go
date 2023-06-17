@@ -1,0 +1,1 @@
+// Inspired by https://github.com/diamondburned/libdb.so/blob/go-serial/vm/terminal.go
