@@ -2,17 +2,25 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "npm:gameboy-emulator@1.1.2": "npm:gameboy-emulator@1.1.2"
+      "npm:gbajs@1.1.2": "npm:gbajs@1.1.2"
     },
     "npm": {
-      "gameboy-emulator@1.1.2": {
-        "integrity": "sha512-T6h+J4yX4OpQsuQgWuDR5uk772qpnDiPtm1Pdp3Y1LdsEdTDqnhvqKm/ChbvJO6XxCanL7hm2MXlHD/PFJMvVA==",
+      "buffer-dataview@0.0.2": {
+        "integrity": "sha512-YiNEgOoMDO8KrJqptlJYZBrZ9qXajxiaWF0YPU7LC0ywmJ8RVt7R28Y8AlJy97upM5GCQyeBKDeFTXq/Xec5Ow==",
+        "dependencies": {}
+      },
+      "gbajs@1.1.2": {
+        "integrity": "sha512-+jsgHM+qA0J/E1xE86BZu2P0ysqwIcGmkRSoyS7ECfO+Ic+jaajcVUWGx1Pp0sC/sRGWV+/mOg0Y+8IG9WKjxA==",
+        "dependencies": {
+          "buffer-dataview": "buffer-dataview@0.0.2",
+          "pngjs": "pngjs@3.4.0"
+        }
+      },
+      "pngjs@3.4.0": {
+        "integrity": "sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==",
         "dependencies": {}
       }
     }
   },
-  "remote": {
-    "https://esm.sh/gameboy-emulator@1.1.2": "a1658c2c8165e0d216ea54050885fe7fd373e9445c6f949eec42424b20d454b8",
-    "https://esm.sh/v126/gameboy-emulator@1.1.2/denonext/gameboy-emulator.mjs": "e211008da8db128b7b650b5200e740e7ad2c4546d91207df97d1b53cbe0ad7d5"
-  }
+  "remote": {}
 }

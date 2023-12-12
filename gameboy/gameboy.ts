@@ -1,4 +1,4 @@
-import { gameboy_emulator } from "dterm/deps.ts";
+import { GBACore } from "dterm/deps.ts";
 
 export interface GameboyOptions {
   rom: ArrayBuffer;
@@ -12,12 +12,14 @@ export interface GameboyResult {
 }
 
 export async function gameboy(options: GameboyOptions): Promise<GameboyResult> {
-  const emulator = new gameboy_emulator.Gameboy();
+  const emulator = new GBACore();
   emulator.loadGame(options.rom);
   if (options.save) {
     emulator.setCartridgeSaveRam(options.save);
   }
 
+  // TODO: Reference
+  // https://github.com/DjDeveloperr/DenoGBA/blob/main/gba.ts
   return new Promise((resolve) => {
     emulator.setOnWriteToCartridgeRam(() => {
       const save = emulator.getCartridgeSaveRam();

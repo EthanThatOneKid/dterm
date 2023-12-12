@@ -1,1 +1,1 @@
-export * as gameboy_emulator from "npm:gameboy-emulator@1.1.2";
+export { default as GBACore } from "npm:gbajs@1.1.2";
