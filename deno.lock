@@ -1,0 +1,18 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:gameboy-emulator@1.1.2": "npm:gameboy-emulator@1.1.2"
+    },
+    "npm": {
+      "gameboy-emulator@1.1.2": {
+        "integrity": "sha512-T6h+J4yX4OpQsuQgWuDR5uk772qpnDiPtm1Pdp3Y1LdsEdTDqnhvqKm/ChbvJO6XxCanL7hm2MXlHD/PFJMvVA==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {
+    "https://esm.sh/gameboy-emulator@1.1.2": "a1658c2c8165e0d216ea54050885fe7fd373e9445c6f949eec42424b20d454b8",
+    "https://esm.sh/v126/gameboy-emulator@1.1.2/denonext/gameboy-emulator.mjs": "e211008da8db128b7b650b5200e740e7ad2c4546d91207df97d1b53cbe0ad7d5"
+  }
+}

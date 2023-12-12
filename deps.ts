@@ -1,1 +1,1 @@
-export { Gameboy } from "https://esm.sh/gameboy-emulator@1.1.2";
+export * as gameboy_emulator from "npm:gameboy-emulator@1.1.2";
