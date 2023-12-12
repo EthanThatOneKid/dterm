@@ -1,6 +1,6 @@
-import { gameboy } from "./gameboy/gameboy.ts";
+import { gba } from "./gba/gba.ts";
 
-const shit = await gameboy({
+const shit = await gba({
   rom: readROM(),
   save: readSave(),
   handleWriteToCartridgeRam(save) {
@@ -11,11 +11,15 @@ const shit = await gameboy({
 console.log({ shit });
 
 function readROM() {
-  return Deno.readFileSync("./game.gbc");
+  return Deno.readFileSync("./game.gba");
 }
 
 function readSave() {
-  return Deno.readFileSync("./game.sav");
+  try {
+    return Deno.readFileSync("./game.sav");
+  } catch {
+    return undefined;
+  }
 }
 
 function writeSave(buffer: ArrayBuffer) {
